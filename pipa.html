@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caminhão Pipa – MicBan Locações</title>
+    <meta name="description" content="Detalhes do serviço de Caminhão Pipa da MicBan Locações: abastecimento de água, limpeza e higienização." />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="brand">MicBan Locações</div>
+      <ul>
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#modelos">Modelos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Caminhão Pipa</h1>
+      <p>Ideal para abastecimento de água potável e serviços de lavagem em obras, condomínios e eventos.</p>
+    </section>
+    <section class="section">
+      <model-viewer src="assets/pipa.glb" camera-controls auto-rotate></model-viewer>
+    </section>
+    <section class="section">
+      <h2>Serviços disponíveis</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Abastecimento de água</h3>
+          <p>Fornecimento rápido e seguro de água potável para obras, eventos e situações de emergência.</p>
+        </div>
+        <div class="service-card">
+          <h3>Limpeza de reservatórios</h3>
+          <p>Higienização de cisternas e caixas d’água, garantindo qualidade e segurança do consumo.</p>
+        </div>
+        <div class="service-card">
+          <h3>Lavagem e desinfecção</h3>
+          <p>Lavagem de ruas, áreas externas e equipamentos com alta pressão e eficiência.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      © <span id="year"></span> MicBan Locações – Todos os direitos reservados.
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
