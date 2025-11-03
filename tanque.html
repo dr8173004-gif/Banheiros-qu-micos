@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caminhão Tanque – MicBan Locações</title>
+    <meta name="description" content="Detalhes do Caminhão Tanque da MicBan Locações: sucção de líquidos, limpeza de poços e transporte de efluentes." />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="brand">MicBan Locações</div>
+      <ul>
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#modelos">Modelos</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Caminhão Tanque</h1>
+      <p>Sucção dedicada e transporte seguro de resíduos líquidos e industriais.</p>
+    </section>
+    <section class="section">
+      <model-viewer src="assets/tanque.glb" camera-controls auto-rotate></model-viewer>
+    </section>
+    <section class="section">
+      <h2>Serviços disponíveis</h2>
+      <div class="service-grid">
+        <div class="service-card">
+          <h3>Sucção de resíduos líquidos</h3>
+          <p>Remoção e transporte de efluentes líquidos de forma segura e regulamentada.</p>
+        </div>
+        <div class="service-card">
+          <h3>Limpeza de poços de recalque</h3>
+          <p>Higienização e manutenção de poços para garantir o correto funcionamento das bombas.</p>
+        </div>
+        <div class="service-card">
+          <h3>Transporte de efluentes</h3>
+          <p>Coleta e transporte de efluentes industriais para destinação adequada e legalizada.</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      © <span id="year"></span> MicBan Locações – Todos os direitos reservados.
+    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
