@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MicBan Locações – Portal de Serviços</title>
+    <meta name="description" content="Portal de vendas da MicBan Locações – sucção, limpeza e locação de caminhões especializados." />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Import the model-viewer web component -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js"></script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="brand">MicBan Locações</div>
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+      <h1>Soluções em Sução, Limpeza e Locação</h1>
+      <p>Atendemos condomínios, obras e eventos com uma frota moderna e profissional. Selecione o modelo ideal para o seu serviço.</p>
+      <a href="#modelos" class="btn">Ver modelos de caminhões</a>
+    </section>
+    <!-- Model Gallery -->
+    <section class="section" id="modelos">
+      <h2>Nossos caminhões</h2>
+      <div class="models-grid">
+        <!-- Caminhão Pipa -->
+        <div class="model-card">
+          <model-viewer src="assets/pipa.glb" camera-controls auto-rotate></model-viewer>
+          <h3>Caminhão Pipa</h3>
+          <p>Abastecimento de água e serviços gerais de limpeza.</p>
+          <a href="pipa.html" class="btn-sm">Ver detalhes</a>
+        </div>
+        <!-- Caminhão Hidro-Jato (Sucção) -->
+        <div class="model-card">
+          <model-viewer src="assets/succao.glb" camera-controls auto-rotate></model-viewer>
+          <h3>Caminhão Hidro-Jato</h3>
+          <p>Serviços de sucção e limpeza de fossas e caixas de gordura.</p>
+          <a href="succao.html" class="btn-sm">Ver detalhes</a>
+        </div>
+        <!-- Caminhão Tanque -->
+        <div class="model-card">
+          <model-viewer src="assets/tanque.glb" camera-controls auto-rotate></model-viewer>
+          <h3>Caminhão Tanque</h3>
+          <p>Sucção dedicada de resíduos líquidos e industriais.</p>
+          <a href="tanque.html" class="btn-sm">Ver detalhes</a>
+        </div>
+      </div>
+    </section>
+    <!-- Contact / Footer -->
+    <footer id="contato">
+      © <span id="year"></span> MicBan Locações – Todos os direitos reservados. Entre em contato pelo WhatsApp para orçamentos.
+    </footer>
+    <script>
+      // Atualiza o ano automaticamente
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
